@@ -45,7 +45,7 @@ const App = () => {
 
   return (
     <div className="container mx-auto p-4">
-      <h1 className="text-3xl font-bold mb-10">Notícias</h1>
+      <h1 className="text-3xl font-bold mb-10 text-black">Notícias</h1>
       <SearchBar onSearch={handleSearch} />
 
       <div className="comuns-2 sm:columns-3 lg:columns-4 gap-4 mt-30">

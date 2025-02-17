@@ -14,13 +14,13 @@ const SearchBar = ({ onSearch }) => {
   }
 
   return (
-    <form onSubmit={handleSubmit} className="mb-4">
+    <form onSubmit={handleSubmit} className="mb-4 text-black ">
       <input
         type="text"
         value={query}
         onChange={handleChange}
         placeholder="Pesquisar notícias..."
-        className="w-full p-2 bg-gray-400 rounded-lg text-white text-center"
+        className="w-full p-2 bg-gray-200 rounded-lg text-center"
       />
     </form>
   )

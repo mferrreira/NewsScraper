@@ -3,11 +3,11 @@ import React from 'react'
 
 export default function NewsCard({ title, description, url, imageUrl, source }) {
     // Definindo a cor da borda conforme a fonte da notícia
-    const borderColor = source === 'UOL' ? 'bg-[#e3e9c2] border-orange-800' :
-                        source === 'G1' ? 'bg-[#F9FBB2]  border-black' :  'bg-[#F8FCDA] border-red-500'
+    const borderColor = source === 'UOL' ? 'bg-blue-100' :
+                        source === 'G1' ? 'bg-blue-200' :  'bg-blue-300'
 
     return (
-        <div className={`text-gray-900 justify-between border ${borderColor} p-4 rounded-lg shadow-lg  max-w-md h-fit mb-4 break-inside-avoid-column	`}>
+        <div className={`text-gray-900 justify-between border border-black ${borderColor} p-4 rounded-lg shadow-lg  max-w-md h-fit mb-4 break-inside-avoid-column	`}>
         <p className="text-xs text-gray-500 my-2">Fonte: {source}</p>
         {imageUrl && (
           <img
